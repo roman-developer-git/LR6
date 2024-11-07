@@ -125,3 +125,36 @@ git push --force
 &nbsp;&nbsp;&nbsp;&nbsp; Заливаем ветку на удаленный репозиторий.
 
 ![Рисунок 36](screenshots/36.png)
+
+# Лог команд
+```
+git config --global user.name  
+git config --global user.email  
+git clone  
+git pull origin master  
+git log master  
+git checkout -b branch1 origin/branch1  
+git log branch1  
+git log --graph --oneline --decorate  
+git log -p  
+git merge branch1  
+git commit -m "resolved conflict"  
+git push  
+git branch -d branch1  
+git push -d origin branch1  
+echo "hello world" > file_test1.txt  
+git add file_test1.txt  
+git commit -m "doc: add file_test1"  
+git push  
+echo "2hello world" > file_test2.txt  
+git add file_test2.txt  
+git commit -m "doc: add file_test2"  
+git push  
+git reset --hard HEAD~1  
+git revert HEAD  
+git push --force  
+git checkout -b report  
+git push --set-upstream origin report
+```
+
+
