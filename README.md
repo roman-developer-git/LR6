@@ -157,4 +157,57 @@ git checkout -b report
 git push --set-upstream origin report
 ```
 
+# История операций
+```
+commit 6407be0deb1e184048958f4987dcc36379826bbf (HEAD -> master, origin/master, origin/HEAD)
+Author: B3441 Bizin R S <romanic523@gmail.com>
+Date:   Sun Oct 20 23:23:50 2024 +0300
 
+    Revert "doc: add file_test1"
+    
+    This reverts commit d60549092a841c56591e61c46914c8845e3a3c00.
+
+commit d60549092a841c56591e61c46914c8845e3a3c00
+Author: B3441 Bizin R S <romanic523@gmail.com>
+Date:   Sun Oct 20 23:05:52 2024 +0300
+
+    doc: add file_test1
+
+commit f1a0ab50c00988ab481c58fa401fb05b93647da0
+Merge: 29efb28 0f9f50d
+Author: B3441 Bizin R S <romanic523@gmail.com>
+Date:   Sun Oct 20 22:32:53 2024 +0300
+
+    resolved conflict
+
+commit 29efb283972918b621d65642eed9cb7092f56d5f
+Author: roman-developer-git <romanic523@gmail.com>
+Date:   Sun Oct 20 21:29:36 2024 +0300
+
+    doc: add new file
+
+commit 921f53b8d0cebf542c791cf31f04e9b792f385a4
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 20:09:49 2020 +0300
+
+    Обновление информации
+
+commit 0f9f50db68a6983b47398017545532cd0f992846
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 20:08:33 2020 +0300
+
+    Заполнил файл
+
+commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 20:02:16 2020 +0300
+
+    Файл создан пустым
+
+commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 19:58:20 2020 +0300
+
+    Initial commit
+```
