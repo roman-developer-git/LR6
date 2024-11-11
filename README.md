@@ -50,7 +50,7 @@ https://github.com/Kurtyanik/LR6/ (Fork).
 
 &nbsp;&nbsp;&nbsp;&nbsp; Для визуального представления истории изменений можно использовать 
 ```
-git log --graph --oneline --decorate
+git log --all --decorate --oneline --graph 
 ```
 &nbsp;&nbsp;&nbsp;&nbsp; Данная команда выведет в графическом интерфейсе историю коммитов для лучшего понимания их структуры.
 
@@ -108,7 +108,7 @@ git log --graph --oneline --decorate
 
 ![Рисунок 32](screenshots/32.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp; Выше было продемонстрировано два разных способа отката коммита: первый подразумевает его полное удаление, а второй - создание диаметрально противоположного коммита. Поскльку стертый коммит остался существовать в удаленном репозитории, мы переписали ветку через команду
+&nbsp;&nbsp;&nbsp;&nbsp; Выше было продемонстрировано два разных способа отката коммита: первый подразумевает его полное удаление, а второй - создание диаметрально противоположного коммита. Поскольку стертый коммит остался существовать в удаленном репозитории, мы переписали ветку через команду
 
 ```
 git push --force
@@ -135,7 +135,8 @@ git pull origin master
 git log master  
 git checkout -b branch1 origin/branch1  
 git log branch1  
-git log --graph --oneline --decorate  
+git log --all --decorate --oneline --graph  
+git checkout master  
 git log -p  
 git merge branch1  
 git commit -m "resolved conflict"  
