@@ -128,9 +128,9 @@ git push --force
 
 # Лог команд
 ```
-git config --global user.name  
-git config --global user.email  
-git clone  
+git config --global user.name "В3441 Bizin R S"  
+git config --global user.email romanic523@gmail.com   
+git clone https://github.com/roman-developer-git/LR6.git  
 git pull origin master  
 git log master  
 git checkout -b branch1 origin/branch1  
