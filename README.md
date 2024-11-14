@@ -159,56 +159,17 @@ git push --set-upstream origin report
 ```
 
 # История операций
+
+С помощью команды git log --pretty=format:"%h - %ad, %an : %s" вывел историю коммитов в ветке мастер в заданном формате (сокращённый хэш + дата + имя автора + комментарий):
+
 ```
-commit 6407be0deb1e184048958f4987dcc36379826bbf (HEAD -> master, origin/master, origin/HEAD)
-Author: B3441 Bizin R S <romanic523@gmail.com>
-Date:   Sun Oct 20 23:23:50 2024 +0300
+6407be0 - Sun Oct 20 23:23:50 2024 +0300, B3441 Bizin R S : Revert "doc: add file_test1"
+d605490 - Sun Oct 20 23:05:52 2024 +0300, B3441 Bizin R S : doc: add file_test1
+f1a0ab5 - Sun Oct 20 22:32:53 2024 +0300, B3441 Bizin R S : resolved conflict
+29efb28 - Sun Oct 20 21:29:36 2024 +0300, roman-developer-git : doc: add new file
+921f53b - Sat Nov 21 20:09:49 2020 +0300, Kurtyanik : Обновление информации
+0f9f50d - Sat Nov 21 20:08:33 2020 +0300, Kurtyanik : Заполнил файл
+c08a654 - Sat Nov 21 20:02:16 2020 +0300, Kurtyanik : Файл создан пустым
+3c6e913 - Sat Nov 21 19:58:20 2020 +0300, Kurtyanik : Initial commit
 
-    Revert "doc: add file_test1"
-    
-    This reverts commit d60549092a841c56591e61c46914c8845e3a3c00.
-
-commit d60549092a841c56591e61c46914c8845e3a3c00
-Author: B3441 Bizin R S <romanic523@gmail.com>
-Date:   Sun Oct 20 23:05:52 2024 +0300
-
-    doc: add file_test1
-
-commit f1a0ab50c00988ab481c58fa401fb05b93647da0
-Merge: 29efb28 0f9f50d
-Author: B3441 Bizin R S <romanic523@gmail.com>
-Date:   Sun Oct 20 22:32:53 2024 +0300
-
-    resolved conflict
-
-commit 29efb283972918b621d65642eed9cb7092f56d5f
-Author: roman-developer-git <romanic523@gmail.com>
-Date:   Sun Oct 20 21:29:36 2024 +0300
-
-    doc: add new file
-
-commit 921f53b8d0cebf542c791cf31f04e9b792f385a4
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 20:09:49 2020 +0300
-
-    Обновление информации
-
-commit 0f9f50db68a6983b47398017545532cd0f992846
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 20:08:33 2020 +0300
-
-    Заполнил файл
-
-commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 20:02:16 2020 +0300
-
-    Файл создан пустым
-
-commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
-Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
-Date:   Sat Nov 21 19:58:20 2020 +0300
-
-    Initial commit
 ```
